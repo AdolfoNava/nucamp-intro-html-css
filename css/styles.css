@@ -17,6 +17,9 @@ header{
 header h2{
     color: #CEC8FF;
 }
+.navbar{
+    background-color: #901CAD;
+}
 footer{
     background: linear-gradient(#CEC8FF, white);
     padding: 20px 0;
