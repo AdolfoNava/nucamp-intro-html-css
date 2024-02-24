@@ -21,7 +21,7 @@
 
     <!-- header -->
     <header>
-        <div class="container row-content align-items-center">
+        <div class="container align-items-center">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
                     <img src="img/logo.png" class="img-fluid" alt="Nucamp logo">
@@ -29,6 +29,10 @@
                 <div class="col">
                     <h1>Nucamp</h1>
                     <h2>a better way to camp</h2>
+                </div>
+                <div class="col-md-4 col-xl-2 align-self-right mt-4">
+                    <button class="btn btn-info text-white"><a href="#reserveForm" style="text-decoration: none;"
+                            class="btn-info text-white text-wrap">Reserve Campsite</a></button>
                 </div>
             </div>
         </div>
@@ -86,13 +90,16 @@
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground
-                    on
-                    the
-                    shores of the pristine React
-                    Lake is a favorite for fly fishers.</p>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground
+                            on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    </div>
+                    <img class="ms-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="Lake" />
+                </div>
             </div>
+
         </section>
 
         <!-- partner section -->
@@ -112,7 +119,42 @@
                 </div>
             </div>
         </section>
-
+        <section class="row row-content">
+            <div class="col-sm-9 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form id="reserveForm" method="post">
+                            <div class="row">
+                                <label class="col-form-label col-sm-4" for="Number">Number of Campers</label>
+                                <div class="col mb-3">
+                                    <select class="form-select col-sm-4" name="Number" id="Number">
+                                        <option value="" disabled selected>Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-form-label col-sm-4" for="Date">Date</label>
+                                <div class="col mb-3">
+                                    <input class="form-control" type="date" name="Date" id="Date" placeholder="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-xs-12">
+                                    <input type="button" class="btn btn-primary" value="Search">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer -->
