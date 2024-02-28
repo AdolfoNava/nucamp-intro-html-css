@@ -31,8 +31,8 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2 align-self-right mt-4">
-                    <button class="btn btn-info text-white"><a href="#reserveForm" style="text-decoration: none;"
-                            class="btn-info text-white text-wrap">Reserve Campsite</a></button>
+                    <button type="button" class="btn btn-info text-white text-nowrap" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve
+                            Campsite</button>
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h3 class="modal-title">Login</h3>
-                    <button type="button" class="btn-close" data-bs-target="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
@@ -102,6 +102,49 @@
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button>
                                     <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Reserve a Campsite Modal-->
+    <div class="modal" id="reserveModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title">Reserve a Campsite</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+                            <div class="row">
+                                <label class="col-form-label col-sm-4" for="Number">Number of Campers</label>
+                                <div class="col mb-3">
+                                    <select class="form-select col-sm-4" name="Number" id="Number">
+                                        <option value="" disabled selected>Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-form-label col-sm-4" for="Date">Date</label>
+                                <div class="col mb-3">
+                                    <input class="form-control" type="date" name="Date" id="Date" placeholder="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-xs-12">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Search</button>
                                 </div>
                             </div>
                         </form>
@@ -166,6 +209,7 @@
                 </div>
             </div>
         </section>
+        <!--
         <section class="row row-content">
             <div class="col-sm-9 mx-auto">
                 <div class="card">
@@ -201,7 +245,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!-- footer -->
