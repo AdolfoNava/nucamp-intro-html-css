@@ -43,3 +43,10 @@ footer{
 .carousel {
     border: solid #5637DD;
 }
+.image{
+    height: 400px;
+}
+.image-text{
+    color: black;
+    background-color: grey;
+}
