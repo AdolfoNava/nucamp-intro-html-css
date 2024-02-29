@@ -13,3 +13,6 @@ remix/img/react-lake-thumb.jpg
 remix/img/react-lake.jpg
 remix/img/reelflyrod-redington-rod-predator-primary-img_640x640.png
 remix/img/Sitka-Delta-Zip-Waders1.png
+node_modules
+dist
+.parcel-cache

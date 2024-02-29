@@ -1,0 +1,24 @@
+{
+  "name": "nucampsite",
+  "version": "1.0.0",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel --open",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdolfoNava/nucamp-intro-html-css.git"
+  },
+  "keywords": [],
+  "author": "Adolfo Nava",
+  "license": "ISC",
+  "description": "A fictional campsites review website for education.",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "bootstrap": "^5.2.3"
+  }
+}
