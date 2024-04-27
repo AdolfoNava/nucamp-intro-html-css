@@ -59,6 +59,12 @@
                         <a class="nav-link" href="contactus.html"><i class="fa-solid fa-address-card fa-lg"></i>
                             Contact</a>
                     </li>
+                    <!--Weather Component-->
+                    <div id="weather" class="d-none d-md-flex align-items-center">
+                        <i id="weather-icon"></i>
+                        <span id="weather-temp"></span>
+                        <span id="weather-description" class="d-none d-lg-inline"></span>
+                    </div>
                 </ul>
                 <span class="navbar-text ms-auto">
                     <a role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -202,6 +208,9 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only">Next</span>
                     </a>
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
+                        <i class="fa-solid fa-pause" id="faButton"></i>
+                    </button>
                 </div>
             </div>
         </Section>
@@ -340,6 +349,7 @@
     </footer>
     <!-- Bootstrap JavaScript plugins -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="js/scripts.js" type="module"></script>
 
 </body>
 

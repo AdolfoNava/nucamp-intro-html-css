@@ -16,3 +16,5 @@ remix/img/Sitka-Delta-Zip-Waders1.png
 node_modules
 dist
 .parcel-cache
+.env
+.firebase/hosting.ZGlzdA.cache
